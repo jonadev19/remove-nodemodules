@@ -1,0 +1,33 @@
+{
+  "name": "remove-nodemodules-cli",
+  "version": "1.0.0",
+  "description": "Herramienta CLI ultra rápida para eliminar carpetas node_modules residuales",
+  "main": "./dist/main.js",
+  "type": "commonjs",
+  "bin": {
+    "rm-modules": "./dist/main.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsx --watch src/main.ts",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "node_modules",
+    "clean",
+    "purge",
+    "remove",
+    "typescript"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  }
+}
